@@ -1,18 +1,18 @@
-<h1 align="left">Majd Mimoun — Software Engineer</h1>
+<h1 align="left">Majd Mimoun — Full Stack Engineer</h1>
 
-**Full-Stack Software Engineer** building event-driven systems on AWS Serverless, TypeScript and React.
-Currently at **Groupe La Centrale** (La Centrale · Promoneuve · Caradisiac), working on buyer/seller lead generation.
+I'm a Full Stack Engineer with 5+ years of experience building web applications.
+I enjoy understanding how things work, solving problems, and turning ideas into products that are actually useful.
+I care just as much about writing code that is simple, maintainable, and easy for a team to work with.
 
-📍 Paris region, France · 🌐 Open to new opportunities · 🗣️ French · Arabic · English
+📍 Paris region, France · 🌐 Open to new opportunities in Software Engineering / Full Stack Development · 🗣️ French · Arabic · English
 
 ---
 
-### ⚡ What I do
+### 💼 Experience
 
-- Design **event-driven pipelines** with Lambda, Kinesis, EventBridge, Step Functions and DynamoDB
-- Ship **infrastructure as code** with AWS CDK
-- Build **full-stack products** with Node.js, NestJS, React and Next.js
-- 5+ years across marketplaces (La Centrale), conversational AI (Zaion) and client delivery (IYA SOFT)
+- **Groupe La Centrale** (2021 – now): buyer/seller engagement features on a serverless AWS microservices platform; event-driven triggers feeding Braze CRM
+- **Zaion** (2021): Dialog Manager for production AI chatbots and voicebots
+- **IYA SOFT** (2020 – 2021): front-end development, Azure DevOps CI/CD, Cypress E2E tests
 
 ### 🛠️ Stack
 
@@ -31,13 +31,8 @@ Currently at **Groupe La Centrale** (La Centrale · Promoneuve · Caradisiac), w
 
 | Project | What it is | Stack |
 |---|---|---|
-| **Alminhej** | White-label SaaS for online education | Next.js · NestJS · PostgreSQL |
-| **Al-Rafik** | Peer-to-peer Quran memorization platform | Next.js · Supabase · Agora |
-
-### 🌱 Currently
-
-- Preparing **AWS Certified Developer – Associate** (DVA-C02)
-- Deepening **TypeScript design patterns** (GoF, SOLID)
+| **Alminhej** | White-label SaaS for online education | Next.js · NestJS · PostgreSQL · Supabase |
+| **Al-Rafik** | Peer-to-peer Quran memorization platform | Next.js · Supabase · PostgreSQL · Agora |
 
 ### 📫 Reach me
 

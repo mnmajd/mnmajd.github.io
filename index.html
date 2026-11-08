@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Majd Mimoun — Software Engineer · AI, Automation & Systems Integration</title>
-<meta name="description" content="Majd Mimoun — Software Engineer with 5+ years building production systems: AI & automation, web platforms, APIs, CRM and messaging integrations, AWS cloud." />
-<meta property="og:title" content="Majd Mimoun — Software Engineer" />
-<meta property="og:description" content="AI & automation · Web platforms · APIs & CRM integration · AWS" />
+<title>Majd Mimoun — Full Stack Engineer</title>
+<meta name="description" content="Majd Mimoun — Full Stack Engineer with 5+ years of experience building web applications with TypeScript, React, Node.js and cloud environments." />
+<meta property="og:title" content="Majd Mimoun — Full Stack Engineer" />
+<meta property="og:description" content="Full Stack Engineer · TypeScript, React, Node.js, cloud" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -50,7 +50,7 @@
   .eyebrow { color: var(--gold); font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
   html[lang="ar"] .eyebrow { letter-spacing: 0; font-size: 15px; }
   .hero h1 { font-size: clamp(38px, 5.4vw, 60px); font-weight: 600; line-height: 1.08; margin: 14px 0 20px; letter-spacing: -.01em; }
-  .hero .summary { color: #c6cfdb; font-size: 17px; max-width: 600px; }
+  .hero .summary { color: #c6cfdb; font-size: 17px; max-width: 600px; display: grid; gap: 12px; }
   .hero .summary strong { color: #fff; font-weight: 500; }
   .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
   .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 6px; font-size: 14px; font-weight: 500; border: 1px solid rgba(255,255,255,.25); transition: background .2s, border-color .2s, color .2s; }
@@ -116,6 +116,8 @@
   html[lang="ar"] .pdl dt { letter-spacing: 0; font-size: 13px; }
   .pdl dd { color: var(--muted); font-size: 14.5px; }
   .proj .tags { margin-top: auto; padding-top: 16px; }
+  .proj ul { padding-inline-start: 18px; display: grid; gap: 6px; color: var(--muted); font-size: 14.5px; }
+  .proj li::marker { color: var(--gold); }
 
   /* skills */
   .skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
@@ -189,7 +191,7 @@
     .card .ico { width: 30px; height: 30px; margin-bottom: 8px; }
     .card .ico svg { width: 16px; height: 16px; }
     .card h3 { font-size: 14px; }
-    .card p, .card li, .job li, .job .ctx, .proj p, .pdl dd { font-size: 12px; }
+    .card p, .card li, .job li, .job .ctx, .proj p, .proj li, .pdl dd { font-size: 12px; }
     .job { grid-template-columns: 150px 1fr; gap: 20px; padding: 14px 0; break-inside: avoid; }
     .job h3 { font-size: 16px; }
     .projects { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -234,525 +236,55 @@
     </div>
   </div>
 </div>
-
-<!-- ============================== ENGLISH ============================== -->
 <main data-lang="en">
-  <header class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">Software Engineer · AI, Automation & Systems Integration</div>
-        <h1>Majd Mimoun</h1>
-        <p class="summary">
-          Full-stack software engineer with <strong>5+ years</strong> building production systems for
-          <strong>online marketplaces</strong> and <strong>AI products</strong>. I design event-driven back-ends on AWS,
-          integrate services through <strong>APIs and third-party platforms</strong>, and ship web applications
-          end to end — from technical design to production.
-        </p>
-        <div class="cta">
-          <a class="btn gold" href="mailto:majdmn6@gmail.com">Contact me</a>
-          <a class="btn" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/mnmajd" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <aside class="facts">
-        <div class="fact"><span class="k">Current role</span><span class="v">Full Stack Engineer – AWS<br/>Groupe La Centrale</span></div>
-        <div class="fact"><span class="k">Experience</span><span class="v">5+ years</span></div>
-        <div class="fact"><span class="k">Based in</span><span class="v">Paris, France</span></div>
-        <div class="fact"><span class="k">Education</span><span class="v">Computer Engineering, ESPRIT</span></div>
-        <div class="fact"><span class="k">Languages</span><span class="v">Arabic · French · English</span></div>
-      </aside>
-    </div>
-  </header>
-
-  <section id="expertise">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">01 · Core expertise</div>
-        <h2>What I bring to a team</h2>
-        <p>Hands-on experience across the full chain: systems, AI and automation, web platforms, and the integrations that connect them.</p>
-      </div>
-      <div class="grid3">
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg></div>
-          <h3>Systems programming & development</h3>
-          <ul>
-            <li>Microservices and serverless back-ends in Node.js & TypeScript</li>
-            <li>Technical design, task definition and production delivery</li>
-            <li>Unit, integration and end-to-end testing; refactoring for performance</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg></div>
-          <h3>AI & automation</h3>
-          <ul>
-            <li>Built features for an AI dialog manager powering chatbots & callbots</li>
-            <li>Interactive voice server that routes customer calls automatically</li>
-            <li>Workflow automation with AWS Step Functions & event pipelines</li>
-            <li>Training: Developing Generative AI Applications on AWS</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div>
-          <h3>Web platforms</h3>
-          <ul>
-            <li>Web apps, SaaS platforms and admin dashboards with React & Next.js</li>
-            <li>White-label SaaS for online education (Alminhej, side project)</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11.2a2 2 0 002 1.6h7.7a2 2 0 002-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></svg></div>
-          <h3>Marketplaces & customer engagement</h3>
-          <ul>
-            <li>Buyer/seller lead generation for La Centrale, Caradisiac & Promoneuve</li>
-            <li>Customer engagement integration with Braze</li>
-                      </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 01-11.6 7.1L4 21l1.9-5.4A8 8 0 1121 12z"/><path d="M9 12h6"/></svg></div>
-          <h3>APIs & integrations</h3>
-          <ul>
-            <li>REST APIs with Node.js & Express</li>
-            <li>Event-driven integration with EventBridge & Kinesis; webhooks</li>
-            <li>Third-party integration with Braze; real-time with Socket.IO and Agora</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a4 4 0 01-.6-8 6 6 0 0111.5 1.5A3.5 3.5 0 0117.5 18z"/></svg></div>
-          <h3>Cloud & DevOps</h3>
-          <ul>
-            <li>AWS Lambda, Kinesis, EventBridge, Step Functions, DynamoDB</li>
-            <li>Infrastructure as code with AWS CDK</li>
-            <li>CI/CD (Azure DevOps, Jenkins), Docker, Kubernetes monitoring</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">02 · Professional experience</div>
-        <h2>Where I've delivered</h2>
-      </div>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">12/2021 — Present</div>
-          <div class="where">Paris, France</div>
-          <span class="badge">Current</span>
-        </div>
-        <div>
-          <h3>Groupe La Centrale</h3>
-          <div class="role">Full Stack Engineer – AWS</div>
-          <p class="ctx">Automotive marketplace group operating La Centrale, Promoneuve and Caradisiac. I work on the platform that generates and delivers buyer/seller leads.</p>
-          <ul>
-            <li>Build and evolve an event-driven lead generation platform on a serverless AWS microservices architecture.</li>
-            <li>Lead new features end to end: technical design, ticket definition, development, testing and production deployment.</li>
-            <li>Integrate the platform with Braze for customer engagement.</li>
-            <li>Provision cloud resources as code with AWS CDK.</li>
-            <li>Write unit and integration tests; contribute to architecture reviews and lead refactoring for code quality and performance.</li>
-          </ul>
-          <div class="tags"><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Lambda</span><span class="tag">Kinesis</span><span class="tag">EventBridge</span><span class="tag">Step Functions</span><span class="tag">DynamoDB</span><span class="tag">CDK</span><span class="tag">Braze</span></div>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">01/2021 — 12/2021</div>
-          <div class="where">Paris region, France</div>
-        </div>
-        <div>
-          <h3>Zaion</h3>
-          <div class="role">Full Stack Engineer</div>
-          <p class="ctx">AI company building chatbot and callbot solutions.</p>
-          <ul>
-            <li>Developed new features and improvements for an AI-based dialog manager used in chatbot and callbot solutions.</li>
-            <li>Collaborated with the DevOps team on the migration to AWS: infrastructure preparation and CI/CD pipelines.</li>
-            <li>Delivered scalable, maintainable code in an agile team.</li>
-          </ul>
-          <div class="tags"><span class="tag">Node.js</span><span class="tag">Conversational AI</span><span class="tag">AWS</span><span class="tag">CI/CD</span></div>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">10/2020 — 01/2021</div>
-          <div class="where">Tunisia · French client</div>
-        </div>
-        <div>
-          <h3>IYA SOFT</h3>
-          <div class="role">Software Engineer</div>
-          <ul>
-            <li>Led front-end development for FrenchInnov products.</li>
-            <li>Built pull-request-based CI/CD pipelines with Azure DevOps.</li>
-            <li>Implemented end-to-end tests with Cypress.</li>
-          </ul>
-          <div class="tags"><span class="tag">React</span><span class="tag">Azure DevOps</span><span class="tag">Cypress</span></div>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">02/2020 — 08/2020</div>
-          <div class="where">Paris, France</div>
-        </div>
-        <div>
-          <h3>ZACK</h3>
-          <div class="role">Full Stack JavaScript Developer · End-of-studies project</div>
-          <ul style="margin-top:12px">
-            <li>Built an interactive voice server that processes incoming customer calls and routes them automatically based on the caller's request.</li>
-            <li>Developed REST APIs with Node.js & Express and modelled data in MongoDB and PostgreSQL.</li>
-            <li>Built the front-end with React and Next.js; containerised with Docker.</li>
-          </ul>
-          <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Next.js</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
-        </div>
-      </article>
-
-      <div class="earlier">
-        <h4>Earlier internships · Tunisia</h4>
-        <ul>
-          <li><b>Pocteo (2019)</b> — Node.js / DevOps / Blockchain: availability monitoring with Prometheus on Kubernetes, GitHub webhooks and Jenkins pipelines, Solidity smart contracts for SLA management.</li>
-          <li><b>Sofia Technologies (2017)</b> — Real-time IoT dashboard for smart agriculture: Node.js, Socket.IO, MongoDB, Angular.</li>
-          <li><b>Best Web Mobile (2016–2017)</b> — Admin dashboard for school events (React) and an Android e-book application.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">03 · Projects</div>
-        <h2>Products I design and build</h2>
-        <p>Personal side projects, maintained as real codebases.</p>
-      </div>
-      <div class="projects">
-        <article class="proj">
-          <div class="proj-top"><h3>Alminhej</h3><span class="status">SaaS</span></div>
-          <div class="sub">White-label platform for online education</div>
-          <p>White-label SaaS: each organization gets its own branded online education platform.</p>
-          <div class="tags"><span class="tag">Next.js</span><span class="tag">NestJS</span><span class="tag">PostgreSQL</span></div>
-        </article>
-        <article class="proj">
-          <div class="proj-top"><h3>Al-Rafik · Rufaqaa</h3><span class="status">Platform</span></div>
-          <div class="sub">Peer-to-peer Quran memorization</div>
-          <p>Platform where learners memorize the Quran in pairs, with real-time communication built on Agora.</p>
-          <div class="tags"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">Agora RTC</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">04 · Technical skills</div>
-        <h2>Toolbox</h2>
-      </div>
-      <div class="skills">
-        <div class="skill"><h4>Languages</h4><p>JavaScript, TypeScript, SQL</p></div>
-        <div class="skill"><h4>Back-end</h4><p>Node.js, NestJS, Express, REST APIs</p></div>
-        <div class="skill"><h4>Front-end</h4><p>React, Next.js, Angular</p></div>
-        <div class="skill"><h4>Cloud (AWS)</h4><p>Lambda, Kinesis, EventBridge, Step Functions, DynamoDB, CDK</p></div>
-        <div class="skill"><h4>Data</h4><p>PostgreSQL, MongoDB, DynamoDB, Supabase</p></div>
-        <div class="skill"><h4>DevOps</h4><p>Docker, CI/CD, Azure DevOps, Jenkins, Kubernetes, Prometheus</p></div>
-        <div class="skill"><h4>Integrations</h4><p>Webhooks, Braze, Agora RTC, Socket.IO</p></div>
-        <div class="skill"><h4>AI & quality</h4><p>Conversational AI, GenAI on AWS (training) · Unit, integration & Cypress E2E tests</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">05 · Education & training</div>
-        <h2>Background</h2>
-      </div>
-      <div class="edu">
-        <div class="card"><div class="when">2017 — 2020</div><h3>Engineering Degree, Computer Engineering</h3><p>ESPRIT — Private Engineering & Technology School, Tunisia</p></div>
-        <div class="card"><div class="when">2013 — 2017</div><h3>Bachelor's Degree in Computer Science</h3><p>Higher Institute of Computer Science (ISI), Tunisia</p></div>
-        <div class="card"><div class="when">Training</div><h3>AWS courses</h3><p>Developing Generative AI Applications on AWS · Advanced AWS Well-Architected Best Practices · Preparing AWS Certified Developer – Associate</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">06 · Contact</div>
-        <h2>Let's talk</h2>
-        <p>Open to new opportunities. Arabic, French and English.</p>
-      </div>
-      <div class="contact-grid">
-        <a class="c-item" href="mailto:majdmn6@gmail.com"><div class="k">Email</div><div class="v">majdmn6@gmail.com</div></a>
-        <div class="c-item print-only"><div class="k">Phone</div><div class="v">+33 6 12 07 22 56</div></div>
-        <a class="c-item" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener"><div class="k">LinkedIn</div><div class="v">linkedin.com/in/majd-mimoun</div></a>
-        <a class="c-item" href="https://github.com/mnmajd" target="_blank" rel="noopener"><div class="k">GitHub</div><div class="v">github.com/mnmajd</div></a>
-        <div class="c-item no-print"><div class="k">Location</div><div class="v">Paris, France</div></div>
-      </div>
-    </div>
-  </section>
+  <header class="hero"><div class="wrap hero-grid"><div>
+    <div class="eyebrow">Full Stack Engineer</div>
+    <h1>Majd Mimoun</h1>
+    <div class="summary"><p>I'm a Full Stack Engineer with <strong>5+ years of experience</strong> building web applications. I enjoy understanding how things work, solving problems, and turning ideas into products that are actually useful.</p><p>I've worked across both frontend and backend, and I'm comfortable moving between the two depending on what the problem requires — mainly with TypeScript, JavaScript, React, Node.js and cloud environments.</p><p>But for me, technology is only part of the job. I care just as much about writing code that is simple, maintainable, and easy for a team to work with. I'm always looking to learn, improve, and work with people who care about building things well.</p></div>
+    <div class="cta">
+      <a class="btn gold" href="mailto:majdmn6@gmail.com">Contact me</a>
+      <a class="btn" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/mnmajd" target="_blank" rel="noopener">GitHub</a>
+    </div></div>
+    <aside class="facts"><div class="fact"><span class="k">Current role</span><span class="v">Full-Stack AWS Engineer<br/>Groupe La Centrale</span></div><div class="fact"><span class="k">Experience</span><span class="v">5+ years</span></div><div class="fact"><span class="k">Based in</span><span class="v">Paris, France</span></div><div class="fact"><span class="k">Education</span><span class="v">Engineering Degree, ESPRIT</span></div><div class="fact"><span class="k">Languages</span><span class="v">Arabic · French · English</span></div></aside>
+  </div></header>
+<section id="expertise"><div class="wrap"><div class="sec-head"><div class="sec-num">01 · What I work on</div><h2>Core areas</h2><p>Drawn from my professional experience and personal projects.</p></div><div class="grid3"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg></div><h3>Back-end & serverless on AWS</h3><ul><li>Event-driven microservices with Lambda, API Gateway, Kinesis, EventBridge and Step Functions</li><li>Data in DynamoDB, PostgreSQL and MongoDB</li><li>Infrastructure as Code with AWS CDK</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div><h3>Front-end</h3><ul><li>React.js and Next.js applications</li><li>Migration to an in-house micro-frontend infrastructure</li><li>Admin dashboards (Alminhej, school-events dashboard)</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l3-7 4 14 3-7h2"/></svg></div><h3>Events & CRM integration</h3><ul><li>Event-driven triggers feeding Braze CRM for buyer and seller re-engagement</li><li>Business events propagated across Kinesis and DynamoDB</li><li>A/B testing feature flags</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg></div><h3>AI</h3><ul><li>Dialog Manager for production AI chatbots and voicebots (Zaion)</li><li>IVR server to automate and route inbound customer calls (ZACK)</li><li>AI-assisted development with Claude, prompt engineering</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Quality & DevOps</h3><ul><li>Unit, integration and end-to-end testing (Cypress), code review</li><li>CI/CD with Azure DevOps and Jenkins</li><li>Docker, Kubernetes, Prometheus</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a4 4 0 01-.6-8 6 6 0 0111.5 1.5A3.5 3.5 0 0117.5 18z"/></svg></div><h3>Ownership & maintenance</h3><ul><li>End-to-end delivery, from technical design to production</li><li>Tech-debt reduction: Node.js migrations, legacy PHP decommissioning</li><li>Agile / Scrum teams</li></ul></div></div></div></section>
+<section id="experience"><div class="wrap"><div class="sec-head"><div class="sec-num">02 · Professional experience</div><h2>Experience</h2></div><article class="job"><div class="job-meta"><div class="when">Dec 2021 — Present</div><div class="where">Paris, France</div><span class="badge">Current</span></div><div><h3>Groupe La Centrale</h3><div class="role">Full-Stack AWS Engineer</div><p class="ctx">Leading French automotive marketplaces: La Centrale, Promoneuve, Caradisiac.</p><ul><li>Develop and maintain features end-to-end on the buyer and seller engagement platform (contact, favorites, vehicle tracking) within a serverless AWS microservices architecture.</li><li>Designed and implemented event-driven triggers (favorites, messaging, price drops, vehicle availability) feeding the Braze CRM to power buyer and seller re-engagement scenarios.</li><li>Captured, enriched and propagated business events (vehicle, buyer and seller data) across Kinesis streams and DynamoDB to support CRM and targeting use cases.</li><li>Debugged and resolved a Kinesis deduplication issue causing bookmark expiration failures, restoring reliability of a core CRM trigger.</li><li>Reduced technical debt through Node.js version migrations, migration to an in-house micro-frontend infrastructure and decommissioning of legacy PHP services.</li><li>Provisioned cloud infrastructure with AWS CDK (Infrastructure as Code) and contributed to A/B testing feature flags and lead generation events.</li></ul><div class="tags"><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Lambda</span><span class="tag">Kinesis</span><span class="tag">EventBridge</span><span class="tag">DynamoDB</span><span class="tag">AWS CDK</span><span class="tag">Braze CRM</span></div></div></article><article class="job"><div class="job-meta"><div class="when">Jan 2021 — Dec 2021</div><div class="where">Paris region, France</div></div><div><h3>Zaion</h3><div class="role">Full-Stack Engineer</div><p class="ctx">AI-based dialog systems for enterprise customer relations.</p><ul><li>Developed and evolved the Dialog Manager component used in production AI chatbots and voicebots.</li><li>Collaborated with the DevOps team on the migration of the infrastructure to AWS, including CI/CD pipelines.</li><li>Worked in a small cross-functional team with close interaction with DevOps and product stakeholders.</li></ul><div class="tags"><span class="tag">Node.js</span><span class="tag">Conversational AI</span><span class="tag">AWS</span><span class="tag">CI/CD</span></div></div></article><article class="job"><div class="job-meta"><div class="when">Oct 2020 — Jan 2021</div><div class="where">Tunisia</div></div><div><h3>IYA SOFT</h3><div class="role">Software Engineer</div><p class="ctx">French client project: FrenchInnov.</p><ul><li>Led front-end development for the client's product suite.</li><li>Built pull-request-based CI/CD pipelines with Azure DevOps.</li><li>Implemented end-to-end testing with Cypress.</li></ul><div class="tags"><span class="tag">Front-end</span><span class="tag">Azure DevOps</span><span class="tag">Cypress</span></div></div></article><article class="job"><div class="job-meta"><div class="when">Feb 2020 — Aug 2020</div><div class="where">Paris, France</div></div><div><h3>ZACK</h3><div class="role">Full-Stack JavaScript Developer (Final-Year Project)</div><div style="height:12px"></div><ul><li>Developed the back-end (Node.js, Express.js) and the associated REST APIs.</li><li>Modeled the databases (MongoDB, PostgreSQL).</li><li>Built the front-end with React.js and Next.js.</li><li>Designed an Interactive Voice Response (IVR) server to automate and route inbound customer calls.</li></ul><div class="tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST APIs</span><span class="tag">React.js</span><span class="tag">Next.js</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span></div></div></article><div class="earlier"><h4>Internships · Tunisia</h4><ul><li><b>Pocteo · Jul–Sep 2019</b> — Node.js / Blockchain / DevOps: Node.js application to test availability metrics with Prometheus monitoring on Kubernetes; on-demand environments triggered by GitHub pull requests via a Jenkins pipeline (Groovy DSL); decentralized application with Truffle and Solidity for distributed SLA management.</li><li><b>Best Web Mobile · Jul–Sep 2017</b> — Front-End: administration dashboard for managing school events with React.js and REST API integration.</li><li><b>Sofia Technologies · Feb–Jun 2017</b> — MEAN Stack: real-time IoT platform for smart agriculture — Node.js server with Socket.IO notifications and an Angular.js dashboard.</li></ul></div></div></section>
+<section id="projects"><div class="wrap"><div class="sec-head"><div class="sec-num">03 · Projects</div><h2>Personal projects</h2></div><div class="projects"><article class="proj"><div class="proj-top"><h3>Alminhej</h3><span class="status">Personal project</span></div><div class="sub">White-label SaaS platform for online education</div><ul><li>Built a white-label platform for education institutions running online courses: course management, student enrollment, progress tracking, multimedia uploads and admin dashboard.</li><li>Implemented multilingual support (Arabic, French, English) with full right-to-left (RTL) handling.</li></ul><div class="tags"><span class="tag">Next.js</span><span class="tag">NestJS</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">Railway</span></div></article><article class="proj"><div class="proj-top"><h3>Al-Rafik · Rufaqaa</h3><span class="status">Personal project</span></div><div class="sub">Peer-to-peer Quran memorization platform</div><ul><li>Built a social platform for peer-to-peer audio sessions, with matching by level, city and availability.</li><li>Gamification: points and daily streaks.</li></ul><div class="tags"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">Agora (real-time audio)</span><span class="tag">Railway</span></div></article></div></div></section>
+<section id="skills"><div class="wrap"><div class="sec-head"><div class="sec-num">04 · Technical skills</div><h2>Skills</h2></div><div class="skills"><div class="skill"><h4>Cloud & architecture</h4><p>AWS Lambda, API Gateway, DynamoDB, Kinesis, EventBridge, Step Functions, S3, CloudWatch, AWS CDK, Serverless, Microservices, Event-Driven Architecture, IaC</p></div><div class="skill"><h4>Languages & frameworks</h4><p>JavaScript, TypeScript, Node.js, React.js, Next.js, NestJS, Express.js, HTML, CSS, REST APIs, Socket.IO</p></div><div class="skill"><h4>Databases</h4><p>PostgreSQL, MongoDB, DynamoDB, Supabase</p></div><div class="skill"><h4>DevOps & tooling</h4><p>Git, GitHub, Docker, Kubernetes, Jenkins, Azure DevOps, CI/CD, Prometheus</p></div><div class="skill"><h4>Testing & quality</h4><p>Unit testing, Integration testing, End-to-End testing, Cypress, Code review</p></div><div class="skill"><h4>AI & productivity</h4><p>AI-assisted development with Claude, Prompt engineering, Generative AI on AWS</p></div><div class="skill"><h4>Methods & tools</h4><p>Agile, Scrum, Braze CRM, A/B testing, Feature flags, Technical design</p></div><div class="skill"><h4>Spoken languages</h4><p>Arabic (native), French (fluent), English (fluent)</p></div></div></div></section>
+<section id="education"><div class="wrap"><div class="sec-head"><div class="sec-num">05 · Education & training</div><h2>Education</h2></div><div class="edu"><div class="card"><div class="when">2017 — 2020</div><h3>Engineering Degree in Computer Science</h3><p>ESPRIT, Private School of Engineering and Technology, Tunisia</p></div><div class="card"><div class="when">2013 — 2017</div><h3>Bachelor's Degree in Computer Science</h3><p>Institut Supérieur d’Informatique, Tunisia</p></div><div class="card"><div class="when">Certifications & training</div><h3>AWS training</h3><p>Developing Generative AI Applications on AWS · Advanced AWS Well-Architected Best Practices</p></div></div></div></section>
+<section id="contact" class="contact"><div class="wrap"><div class="sec-head"><div class="sec-num">06 · Contact</div><h2>Let's talk</h2><p>Currently open to new opportunities in Software Engineering / Full Stack Development.</p></div><div class="contact-grid">
+      <a class="c-item" href="mailto:majdmn6@gmail.com"><div class="k">Email</div><div class="v">majdmn6@gmail.com</div></a>
+      <div class="c-item print-only"><div class="k">Phone</div><div class="v">+33 6 12 07 22 56</div></div>
+      <a class="c-item" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener"><div class="k">LinkedIn</div><div class="v">linkedin.com/in/majd-mimoun</div></a>
+      <a class="c-item" href="https://github.com/mnmajd" target="_blank" rel="noopener"><div class="k">GitHub</div><div class="v">github.com/mnmajd</div></a>
+      <div class="c-item no-print"><div class="k">Location</div><div class="v">Paris, France</div></div>
+    </div></div></section>
 </main>
-
-<!-- ============================== ARABIC ============================== -->
 <main data-lang="ar">
-  <header class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">مهندس برمجيات · الذكاء الاصطناعي، الأتمتة وتكامل الأنظمة</div>
-        <h1>مجد ميمون</h1>
-        <p class="summary">
-          مهندس برمجيات متكامل (Full-Stack) بخبرة تزيد عن <strong>5 سنوات</strong> في بناء أنظمة إنتاجية
-          <strong>للمنصات الإلكترونية</strong> و<strong>منتجات الذكاء الاصطناعي</strong>. أصمّم أنظمة خلفية قائمة على الأحداث
-          على AWS، وأربط الخدمات عبر <strong>واجهات API والمنصات الخارجية</strong>، وأطوّر تطبيقات الويب
-          من التصميم التقني حتى الإطلاق.
-        </p>
-        <div class="cta">
-          <a class="btn gold" href="mailto:majdmn6@gmail.com">تواصل معي</a>
-          <a class="btn" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/mnmajd" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <aside class="facts">
-        <div class="fact"><span class="k">المنصب الحالي</span><span class="v">مهندس Full-Stack – AWS<br/>مجموعة La Centrale</span></div>
-        <div class="fact"><span class="k">الخبرة</span><span class="v">أكثر من 5 سنوات</span></div>
-        <div class="fact"><span class="k">مكان الإقامة</span><span class="v">باريس، فرنسا</span></div>
-        <div class="fact"><span class="k">المؤهل</span><span class="v">مهندس إعلامية، ESPRIT</span></div>
-        <div class="fact"><span class="k">اللغات</span><span class="v">العربية · الفرنسية · الإنجليزية</span></div>
-      </aside>
-    </div>
-  </header>
-
-  <section id="expertise-ar">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">01 · مجالات الخبرة</div>
-        <h2>ما أقدّمه للفريق</h2>
-        <p>خبرة عملية في السلسلة الكاملة: تطوير الأنظمة، الذكاء الاصطناعي والأتمتة، منصات الويب، والتكاملات التي تربط بينها.</p>
-      </div>
-      <div class="grid3">
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg></div>
-          <h3>برمجة وتطوير الأنظمة</h3>
-          <ul>
-            <li>أنظمة خلفية بمعمارية الخدمات المصغّرة و Serverless باستخدام Node.js و TypeScript</li>
-            <li>التصميم التقني وتحديد المهام والتسليم إلى بيئة الإنتاج</li>
-            <li>اختبارات الوحدات والتكامل والاختبارات الشاملة، وإعادة الهيكلة لتحسين الأداء</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg></div>
-          <h3>الذكاء الاصطناعي والأتمتة</h3>
-          <ul>
-            <li>تطوير ميزات لمدير حوار قائم على الذكاء الاصطناعي يشغّل روبوتات المحادثة والمكالمات</li>
-            <li>خادم صوتي تفاعلي يوجّه مكالمات العملاء تلقائياً</li>
-            <li>أتمتة سير العمل عبر AWS Step Functions وخطوط معالجة الأحداث</li>
-            <li>تدريب: تطوير تطبيقات الذكاء الاصطناعي التوليدي على AWS</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div>
-          <h3>منصات ومواقع الويب</h3>
-          <ul>
-            <li>تطبيقات ويب ومنصات SaaS ولوحات تحكم باستخدام React و Next.js</li>
-            <li>منصة SaaS للتعليم الإلكتروني بعلامة بيضاء (Alminhej، مشروع جانبي)</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11.2a2 2 0 002 1.6h7.7a2 2 0 002-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></svg></div>
-          <h3>المنصات التجارية وتفاعل العملاء</h3>
-          <ul>
-            <li>توليد العملاء المحتملين للبائعين والمشترين على منصات La Centrale و Caradisiac و Promoneuve</li>
-            <li>ربط المنصة بـ Braze لإدارة التفاعل مع العملاء</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 01-11.6 7.1L4 21l1.9-5.4A8 8 0 1121 12z"/><path d="M9 12h6"/></svg></div>
-          <h3>واجهات API والتكاملات</h3>
-          <ul>
-            <li>واجهات REST باستخدام Node.js و Express</li>
-            <li>تكامل قائم على الأحداث عبر EventBridge و Kinesis، و Webhooks</li>
-            <li>التكامل مع Braze، وميزات فورية باستخدام Socket.IO و Agora</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a4 4 0 01-.6-8 6 6 0 0111.5 1.5A3.5 3.5 0 0117.5 18z"/></svg></div>
-          <h3>الحوسبة السحابية و DevOps</h3>
-          <ul>
-            <li>AWS Lambda و Kinesis و EventBridge و Step Functions و DynamoDB</li>
-            <li>البنية التحتية كرمز (IaC) باستخدام AWS CDK</li>
-            <li>CI/CD (Azure DevOps و Jenkins)، Docker، ومراقبة Kubernetes</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience-ar" class="exp-ar">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">02 · الخبرة المهنية</div>
-        <h2>المسار المهني</h2>
-      </div>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">12/2021 — حتى الآن</div>
-          <div class="where">باريس، فرنسا</div>
-          <span class="badge">الوظيفة الحالية</span>
-        </div>
-        <div>
-          <h3>مجموعة La Centrale</h3>
-          <div class="role">مهندس Full-Stack – AWS</div>
-          <p class="ctx">مجموعة فرنسية في مجال أسواق السيارات الإلكترونية تدير منصات La Centrale و Promoneuve و Caradisiac. أعمل على المنصة التي تولّد العملاء المحتملين وتوصلهم بين المشترين والبائعين.</p>
-          <ul>
-            <li>بناء وتطوير منصة لتوليد العملاء المحتملين قائمة على الأحداث، بمعمارية خدمات مصغّرة Serverless على AWS.</li>
-            <li>قيادة تطوير الميزات الجديدة من البداية إلى النهاية: التصميم التقني، تحديد المهام، التطوير، الاختبار والنشر.</li>
-            <li>ربط المنصة بـ Braze لإدارة التفاعل مع العملاء.</li>
-            <li>تجهيز الموارد السحابية كرمز باستخدام AWS CDK.</li>
-            <li>كتابة اختبارات الوحدات والتكامل، والمشاركة في مراجعات المعمارية وقيادة إعادة الهيكلة لتحسين جودة الكود والأداء.</li>
-          </ul>
-          <div class="tags"><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Lambda</span><span class="tag">Kinesis</span><span class="tag">EventBridge</span><span class="tag">Step Functions</span><span class="tag">DynamoDB</span><span class="tag">CDK</span><span class="tag">Braze</span></div>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">01/2021 — 12/2021</div>
-          <div class="where">منطقة باريس، فرنسا</div>
-        </div>
-        <div>
-          <h3>Zaion</h3>
-          <div class="role">مهندس Full-Stack</div>
-          <p class="ctx">شركة ذكاء اصطناعي تطوّر حلول روبوتات الدردشة والمكالمات.</p>
-          <ul>
-            <li>تطوير ميزات وتحسينات لمدير حوار قائم على الذكاء الاصطناعي يُستخدم في حلول روبوتات الدردشة والمكالمات.</li>
-            <li>التعاون مع فريق DevOps في الانتقال إلى AWS: تجهيز البنية التحتية وخطوط CI/CD.</li>
-            <li>تسليم كود قابل للتوسّع والصيانة ضمن فريق يعمل بمنهجية Agile.</li>
-          </ul>
-          <div class="tags"><span class="tag">Node.js</span><span class="tag">Conversational AI</span><span class="tag">AWS</span><span class="tag">CI/CD</span></div>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">10/2020 — 01/2021</div>
-          <div class="where">تونس · لصالح عميل فرنسي</div>
-        </div>
-        <div>
-          <h3>IYA SOFT</h3>
-          <div class="role">مهندس برمجيات</div>
-          <ul>
-            <li>قيادة تطوير الواجهات الأمامية لمنتجات FrenchInnov.</li>
-            <li>بناء خطوط CI/CD مبنية على طلبات الدمج (Pull Requests) باستخدام Azure DevOps.</li>
-            <li>تنفيذ اختبارات شاملة (End-to-End) باستخدام Cypress.</li>
-          </ul>
-          <div class="tags"><span class="tag">React</span><span class="tag">Azure DevOps</span><span class="tag">Cypress</span></div>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-meta">
-          <div class="when">02/2020 — 08/2020</div>
-          <div class="where">باريس، فرنسا</div>
-        </div>
-        <div>
-          <h3>ZACK</h3>
-          <div class="role">مطوّر JavaScript Full-Stack · مشروع التخرّج</div>
-          <ul style="margin-top:12px">
-            <li>بناء خادم صوتي تفاعلي يعالج مكالمات العملاء الواردة ويوجّهها تلقائياً حسب طلب المتصل.</li>
-            <li>تطوير واجهات REST باستخدام Node.js و Express، ونمذجة البيانات في MongoDB و PostgreSQL.</li>
-            <li>تطوير الواجهة الأمامية باستخدام React و Next.js، والتغليف بـ Docker.</li>
-          </ul>
-          <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Next.js</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
-        </div>
-      </article>
-
-      <div class="earlier">
-        <h4>تدريبات سابقة · تونس</h4>
-        <ul>
-          <li><b>Pocteo (2019)</b> — Node.js / DevOps / Blockchain: مراقبة توفّر الخدمات بـ Prometheus على Kubernetes، و Webhooks من GitHub مع خطوط Jenkins، وعقود ذكية بلغة Solidity لإدارة اتفاقيات مستوى الخدمة.</li>
-          <li><b>Sofia Technologies (2017)</b> — لوحة تحكم إنترنت الأشياء في الوقت الفعلي للزراعة الذكية: Node.js و Socket.IO و MongoDB و Angular.</li>
-          <li><b>Best Web Mobile (2016–2017)</b> — لوحة إدارة لفعاليات مدرسية (React) وتطبيق كتاب إلكتروني على Android.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects-ar" class="proj-ar">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">03 · المشاريع</div>
-        <h2>منتجات أصمّمها وأطوّرها</h2>
-        <p>مشاريع شخصية جانبية، أطوّرها كقواعد كود حقيقية.</p>
-      </div>
-      <div class="projects">
-        <article class="proj">
-          <div class="proj-top"><h3>Alminhej · المنهج</h3><span class="status">SaaS</span></div>
-          <div class="sub">منصة تعليم إلكتروني بعلامة بيضاء</div>
-          <p>منصة SaaS بعلامة بيضاء: لكل مؤسسة منصة تعليم إلكتروني بهويتها الخاصة.</p>
-          <div class="tags"><span class="tag">Next.js</span><span class="tag">NestJS</span><span class="tag">PostgreSQL</span></div>
-        </article>
-        <article class="proj">
-          <div class="proj-top"><h3>الرفيق · رفقاء</h3><span class="status">منصة</span></div>
-          <div class="sub">منصة لحفظ القرآن الكريم بين الأقران</div>
-          <p>منصة يحفظ فيها المتعلّمون القرآن الكريم في ثنائيات، مع تواصل فوري مبني على Agora.</p>
-          <div class="tags"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">Agora RTC</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills-ar">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">04 · المهارات التقنية</div>
-        <h2>الأدوات والتقنيات</h2>
-      </div>
-      <div class="skills">
-        <div class="skill"><h4>لغات البرمجة</h4><p>JavaScript, TypeScript, SQL</p></div>
-        <div class="skill"><h4>الأنظمة الخلفية</h4><p>Node.js, NestJS, Express, REST APIs</p></div>
-        <div class="skill"><h4>الواجهات الأمامية</h4><p>React, Next.js, Angular</p></div>
-        <div class="skill"><h4>السحابة (AWS)</h4><p>Lambda, Kinesis, EventBridge, Step Functions, DynamoDB, CDK</p></div>
-        <div class="skill"><h4>قواعد البيانات</h4><p>PostgreSQL, MongoDB, DynamoDB, Supabase</p></div>
-        <div class="skill"><h4>DevOps</h4><p>Docker, CI/CD, Azure DevOps, Jenkins, Kubernetes, Prometheus</p></div>
-        <div class="skill"><h4>التكاملات</h4><p>Webhooks, Braze, Agora RTC, Socket.IO</p></div>
-        <div class="skill"><h4>الذكاء الاصطناعي والجودة</h4><p>Conversational AI, GenAI on AWS (training) · Unit, integration & Cypress E2E tests</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education-ar">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">05 · التعليم والتدريب</div>
-        <h2>المؤهلات</h2>
-      </div>
-      <div class="edu">
-        <div class="card"><div class="when">2017 — 2020</div><h3>شهادة مهندس في الإعلامية</h3><p>ESPRIT — المدرسة الخاصة للهندسة والتكنولوجيا، تونس</p></div>
-        <div class="card"><div class="when">2013 — 2017</div><h3>إجازة في علوم الإعلامية</h3><p>المعهد العالي للإعلامية (ISI)، تونس</p></div>
-        <div class="card"><div class="when">تدريب</div><h3>دورات AWS</h3><p>تطوير تطبيقات الذكاء الاصطناعي التوليدي على AWS · أفضل ممارسات AWS Well-Architected المتقدمة · التحضير لشهادة AWS Certified Developer – Associate</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact-ar" class="contact">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="sec-num">06 · التواصل</div>
-        <h2>لنتحدّث</h2>
-        <p>منفتح على فرص جديدة. أتواصل بالعربية والفرنسية والإنجليزية.</p>
-      </div>
-      <div class="contact-grid">
-        <a class="c-item" href="mailto:majdmn6@gmail.com"><div class="k">البريد الإلكتروني</div><div class="v">majdmn6@gmail.com</div></a>
-        <div class="c-item print-only"><div class="k">الهاتف</div><div class="v">+33 6 12 07 22 56</div></div>
-        <a class="c-item" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener"><div class="k">LinkedIn</div><div class="v">linkedin.com/in/majd-mimoun</div></a>
-        <a class="c-item" href="https://github.com/mnmajd" target="_blank" rel="noopener"><div class="k">GitHub</div><div class="v">github.com/mnmajd</div></a>
-        <div class="c-item no-print"><div class="k">الموقع</div><div class="v">باريس، فرنسا</div></div>
-      </div>
-    </div>
-  </section>
+  <header class="hero"><div class="wrap hero-grid"><div>
+    <div class="eyebrow">مهندس Full-Stack</div>
+    <h1>مجد ميمون</h1>
+    <div class="summary"><p>أنا مهندس Full-Stack بخبرة تزيد عن <strong>5 سنوات</strong> في بناء تطبيقات الويب. أحب أن أفهم كيف تعمل الأشياء، وأن أحلّ المشكلات، وأن أحوّل الأفكار إلى منتجات مفيدة فعلاً.</p><p>عملت على الواجهات الأمامية والأنظمة الخلفية معاً، وأتنقّل بينهما بسهولة حسب ما تتطلبه المشكلة — بشكل أساسي باستخدام TypeScript و JavaScript و React و Node.js والبيئات السحابية.</p><p>لكن التقنية بالنسبة لي جزء فقط من العمل؛ فأنا أهتم بالقدر نفسه بكتابة كود بسيط، سهل الصيانة، ويسهل على الفريق العمل عليه. أسعى دائماً إلى التعلّم والتطوّر، وإلى العمل مع أشخاص يهتمون ببناء الأشياء بشكل جيد.</p></div>
+    <div class="cta">
+      <a class="btn gold" href="mailto:majdmn6@gmail.com">تواصل معي</a>
+      <a class="btn" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/mnmajd" target="_blank" rel="noopener">GitHub</a>
+    </div></div>
+    <aside class="facts"><div class="fact"><span class="k">المنصب الحالي</span><span class="v">مهندس Full-Stack AWS<br/>مجموعة La Centrale</span></div><div class="fact"><span class="k">الخبرة</span><span class="v">أكثر من 5 سنوات</span></div><div class="fact"><span class="k">مكان الإقامة</span><span class="v">باريس، فرنسا</span></div><div class="fact"><span class="k">المؤهل</span><span class="v">شهادة مهندس، ESPRIT</span></div><div class="fact"><span class="k">اللغات</span><span class="v">العربية · الفرنسية · الإنجليزية</span></div></aside>
+  </div></header>
+<section id="expertise-ar"><div class="wrap"><div class="sec-head"><div class="sec-num">01 · مجالات العمل</div><h2>المجالات الأساسية</h2><p>مستخلصة من خبرتي المهنية ومشاريعي الشخصية.</p></div><div class="grid3"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg></div><h3>الأنظمة الخلفية و Serverless على AWS</h3><ul><li>خدمات مصغّرة قائمة على الأحداث باستخدام Lambda و API Gateway و Kinesis و EventBridge و Step Functions</li><li>البيانات على DynamoDB و PostgreSQL و MongoDB</li><li>البنية التحتية كرمز باستخدام AWS CDK</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div><h3>الواجهات الأمامية</h3><ul><li>تطبيقات React.js و Next.js</li><li>الانتقال إلى بنية micro-frontend داخلية</li><li>لوحات إدارة (Alminhej، لوحة إدارة الفعاليات المدرسية)</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l3-7 4 14 3-7h2"/></svg></div><h3>الأحداث وتكامل CRM</h3><ul><li>مشغّلات قائمة على الأحداث تغذّي Braze CRM لإعادة تفاعل المشترين والبائعين</li><li>نشر أحداث الأعمال عبر Kinesis و DynamoDB</li><li>أعلام الميزات لاختبارات A/B</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg></div><h3>الذكاء الاصطناعي</h3><ul><li>مدير الحوار لروبوتات الدردشة والروبوتات الصوتية العاملة في الإنتاج (Zaion)</li><li>خادم IVR لأتمتة وتوجيه مكالمات العملاء الواردة (ZACK)</li><li>التطوير بمساعدة الذكاء الاصطناعي (Claude) وهندسة الأوامر</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div><h3>الجودة و DevOps</h3><ul><li>اختبارات الوحدات والتكامل والاختبارات الشاملة (Cypress) ومراجعة الكود</li><li>CI/CD باستخدام Azure DevOps و Jenkins</li><li>Docker و Kubernetes و Prometheus</li></ul></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a4 4 0 01-.6-8 6 6 0 0111.5 1.5A3.5 3.5 0 0117.5 18z"/></svg></div><h3>المسؤولية والصيانة</h3><ul><li>التسليم الكامل من التصميم التقني حتى الإنتاج</li><li>تقليل الدَّين التقني: ترقيات Node.js وإيقاف خدمات PHP القديمة</li><li>العمل ضمن فرق Agile / Scrum</li></ul></div></div></div></section>
+<section id="experience-ar"><div class="wrap"><div class="sec-head"><div class="sec-num">02 · الخبرة المهنية</div><h2>الخبرة</h2></div><article class="job"><div class="job-meta"><div class="when">12/2021 — حتى الآن</div><div class="where">باريس، فرنسا</div><span class="badge">الوظيفة الحالية</span></div><div><h3>مجموعة La Centrale</h3><div class="role">مهندس Full-Stack AWS</div><p class="ctx">منصات فرنسية رائدة لسوق السيارات: La Centrale و Promoneuve و Caradisiac.</p><ul><li>تطوير وصيانة الميزات من البداية إلى النهاية على منصة تفاعل المشترين والبائعين (التواصل، المفضّلة، متابعة المركبات) ضمن معمارية خدمات مصغّرة Serverless على AWS.</li><li>تصميم وتنفيذ مشغّلات قائمة على الأحداث (المفضّلة، الرسائل، انخفاض الأسعار، توفّر المركبات) تغذّي نظام Braze CRM لتشغيل سيناريوهات إعادة تفاعل المشترين والبائعين.</li><li>التقاط أحداث الأعمال (بيانات المركبات والمشترين والبائعين) وإثرائها ونشرها عبر تدفقات Kinesis و DynamoDB لدعم حالات استخدام CRM والاستهداف.</li><li>تشخيص وحلّ مشكلة في إزالة التكرار على Kinesis كانت تسبّب فشل انتهاء صلاحية العناصر المحفوظة (bookmarks)، مما أعاد الموثوقية إلى أحد مشغّلات CRM الأساسية.</li><li>تقليل الدَّين التقني عبر ترقية إصدارات Node.js، والانتقال إلى بنية micro-frontend داخلية، وإيقاف خدمات PHP القديمة.</li><li>تجهيز البنية السحابية باستخدام AWS CDK (البنية التحتية كرمز)، والمساهمة في أعلام الميزات لاختبارات A/B وأحداث توليد العملاء المحتملين.</li></ul><div class="tags"><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Lambda</span><span class="tag">Kinesis</span><span class="tag">EventBridge</span><span class="tag">DynamoDB</span><span class="tag">AWS CDK</span><span class="tag">Braze CRM</span></div></div></article><article class="job"><div class="job-meta"><div class="when">01/2021 — 12/2021</div><div class="where">منطقة باريس، فرنسا</div></div><div><h3>Zaion</h3><div class="role">مهندس Full-Stack</div><p class="ctx">أنظمة حوار قائمة على الذكاء الاصطناعي لعلاقات العملاء في الشركات.</p><ul><li>تطوير وتحسين مكوّن مدير الحوار (Dialog Manager) المستخدم في روبوتات الدردشة والروبوتات الصوتية العاملة في الإنتاج.</li><li>التعاون مع فريق DevOps في نقل البنية التحتية إلى AWS، بما في ذلك خطوط CI/CD.</li><li>العمل ضمن فريق صغير متعدد التخصصات بتواصل وثيق مع فريق DevOps وأصحاب المنتج.</li></ul><div class="tags"><span class="tag">Node.js</span><span class="tag">Conversational AI</span><span class="tag">AWS</span><span class="tag">CI/CD</span></div></div></article><article class="job"><div class="job-meta"><div class="when">10/2020 — 01/2021</div><div class="where">تونس</div></div><div><h3>IYA SOFT</h3><div class="role">مهندس برمجيات</div><p class="ctx">مشروع لعميل فرنسي: FrenchInnov.</p><ul><li>قيادة تطوير الواجهات الأمامية لمجموعة منتجات العميل.</li><li>بناء خطوط CI/CD مبنية على طلبات الدمج (Pull Requests) باستخدام Azure DevOps.</li><li>تنفيذ اختبارات شاملة (End-to-End) باستخدام Cypress.</li></ul><div class="tags"><span class="tag">Front-end</span><span class="tag">Azure DevOps</span><span class="tag">Cypress</span></div></div></article><article class="job"><div class="job-meta"><div class="when">02/2020 — 08/2020</div><div class="where">باريس، فرنسا</div></div><div><h3>ZACK</h3><div class="role">مطوّر JavaScript Full-Stack (مشروع التخرّج)</div><div style="height:12px"></div><ul><li>تطوير النظام الخلفي (Node.js و Express.js) وواجهات REST المرتبطة به.</li><li>نمذجة قواعد البيانات (MongoDB و PostgreSQL).</li><li>تطوير الواجهة الأمامية باستخدام React.js و Next.js.</li><li>تصميم خادم رد صوتي تفاعلي (IVR) لأتمتة وتوجيه مكالمات العملاء الواردة.</li></ul><div class="tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST APIs</span><span class="tag">React.js</span><span class="tag">Next.js</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span></div></div></article><div class="earlier"><h4>تدريبات · تونس</h4><ul><li><b>Pocteo · 07–09/2019</b> — Node.js / Blockchain / DevOps: تطبيق Node.js لاختبار مؤشرات التوفّر مع مراقبة Prometheus على Kubernetes؛ بيئات عند الطلب تُطلق عبر طلبات الدمج على GitHub باستخدام خط Jenkins (Groovy DSL)؛ تطبيق لامركزي بـ Truffle و Solidity لإدارة اتفاقيات مستوى الخدمة.</li><li><b>Best Web Mobile · 07–09/2017</b> — واجهات أمامية: لوحة إدارة كاملة لفعاليات مدرسية باستخدام React.js وواجهات REST.</li><li><b>Sofia Technologies · 02–06/2017</b> — MEAN Stack: منصة إنترنت أشياء في الوقت الفعلي للزراعة الذكية — خادم Node.js مع إشعارات فورية (Socket.IO) ولوحة تحكم Angular.js.</li></ul></div></div></section>
+<section id="projects-ar"><div class="wrap"><div class="sec-head"><div class="sec-num">03 · المشاريع</div><h2>مشاريع شخصية</h2></div><div class="projects"><article class="proj"><div class="proj-top"><h3>Alminhej · المنهج</h3><span class="status">مشروع شخصي</span></div><div class="sub">منصة SaaS للتعليم الإلكتروني بعلامة بيضاء</div><ul><li>بناء منصة بعلامة بيضاء للمؤسسات التعليمية التي تقدّم دورات عبر الإنترنت: إدارة الدورات، تسجيل الطلاب، متابعة التقدّم، رفع الوسائط ولوحة إدارة.</li><li>دعم متعدد اللغات (العربية، الفرنسية، الإنجليزية) مع دعم كامل للكتابة من اليمين إلى اليسار (RTL).</li></ul><div class="tags"><span class="tag">Next.js</span><span class="tag">NestJS</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">Railway</span></div></article><article class="proj"><div class="proj-top"><h3>الرفيق · رفقاء</h3><span class="status">مشروع شخصي</span></div><div class="sub">منصة لحفظ القرآن الكريم بين الأقران</div><ul><li>بناء منصة اجتماعية لجلسات صوتية بين الأقران، مع مطابقة حسب المستوى والمدينة والتوفّر.</li><li>عناصر تحفيزية: نقاط وسلاسل أيام متتالية.</li></ul><div class="tags"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">Agora (real-time audio)</span><span class="tag">Railway</span></div></article></div></div></section>
+<section id="skills-ar"><div class="wrap"><div class="sec-head"><div class="sec-num">04 · المهارات التقنية</div><h2>المهارات</h2></div><div class="skills"><div class="skill"><h4>السحابة والمعمارية</h4><p>AWS Lambda, API Gateway, DynamoDB, Kinesis, EventBridge, Step Functions, S3, CloudWatch, AWS CDK, Serverless, Microservices, Event-Driven Architecture, IaC</p></div><div class="skill"><h4>اللغات وأطر العمل</h4><p>JavaScript, TypeScript, Node.js, React.js, Next.js, NestJS, Express.js, HTML, CSS, REST APIs, Socket.IO</p></div><div class="skill"><h4>قواعد البيانات</h4><p>PostgreSQL, MongoDB, DynamoDB, Supabase</p></div><div class="skill"><h4>DevOps والأدوات</h4><p>Git, GitHub, Docker, Kubernetes, Jenkins, Azure DevOps, CI/CD, Prometheus</p></div><div class="skill"><h4>الاختبار والجودة</h4><p>Unit testing, Integration testing, End-to-End testing, Cypress, Code review</p></div><div class="skill"><h4>الذكاء الاصطناعي والإنتاجية</h4><p>AI-assisted development with Claude, Prompt engineering, Generative AI on AWS</p></div><div class="skill"><h4>المنهجيات والأدوات</h4><p>Agile, Scrum, Braze CRM, A/B testing, Feature flags, Technical design</p></div><div class="skill"><h4>اللغات</h4><p><span dir="rtl">العربية (اللغة الأم)، الفرنسية (بطلاقة)، الإنجليزية (بطلاقة)</span></p></div></div></div></section>
+<section id="education-ar"><div class="wrap"><div class="sec-head"><div class="sec-num">05 · التعليم والتدريب</div><h2>التعليم</h2></div><div class="edu"><div class="card"><div class="when">2017 — 2020</div><h3>شهادة مهندس في علوم الحاسوب</h3><p>ESPRIT — المدرسة الخاصة للهندسة والتكنولوجيا، تونس</p></div><div class="card"><div class="when">2013 — 2017</div><h3>إجازة في علوم الحاسوب</h3><p>المعهد العالي للإعلامية، تونس</p></div><div class="card"><div class="when">الشهادات والتدريب</div><h3>تدريبات AWS</h3><p>تطوير تطبيقات الذكاء الاصطناعي التوليدي على AWS · أفضل ممارسات AWS Well-Architected المتقدمة</p></div></div></div></section>
+<section id="contact-ar" class="contact"><div class="wrap"><div class="sec-head"><div class="sec-num">06 · التواصل</div><h2>لنتحدّث</h2><p>منفتح حالياً على فرص جديدة في هندسة البرمجيات / تطوير Full-Stack.</p></div><div class="contact-grid">
+      <a class="c-item" href="mailto:majdmn6@gmail.com"><div class="k">البريد الإلكتروني</div><div class="v">majdmn6@gmail.com</div></a>
+      <div class="c-item print-only"><div class="k">الهاتف</div><div class="v">+33 6 12 07 22 56</div></div>
+      <a class="c-item" href="https://www.linkedin.com/in/majd-mimoun" target="_blank" rel="noopener"><div class="k">LinkedIn</div><div class="v">linkedin.com/in/majd-mimoun</div></a>
+      <a class="c-item" href="https://github.com/mnmajd" target="_blank" rel="noopener"><div class="k">GitHub</div><div class="v">github.com/mnmajd</div></a>
+      <div class="c-item no-print"><div class="k">الموقع</div><div class="v">باريس، فرنسا</div></div>
+    </div></div></section>
 </main>
 
 <footer>
@@ -773,8 +305,8 @@
       btn.textContent = l === 'ar' ? 'English' : 'عربي';
       pdf.href = l === 'ar' ? 'Majd_Mimoun_Portfolio_AR.pdf' : 'Majd_Mimoun_Portfolio_EN.pdf';
       document.title = l === 'ar'
-        ? 'مجد ميمون — مهندس برمجيات · الذكاء الاصطناعي والأتمتة وتكامل الأنظمة'
-        : 'Majd Mimoun — Software Engineer · AI, Automation & Systems Integration';
+        ? 'مجد ميمون — مهندس Full-Stack'
+        : 'Majd Mimoun — Full Stack Engineer';
       try { localStorage.setItem('lang', l); } catch (e) {}
     }
     var initial = new URLSearchParams(location.search).get('lang');
